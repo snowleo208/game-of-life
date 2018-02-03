@@ -1,0 +1,65 @@
+body {
+		font-family: 'Open Sans', 'Arial';
+	}
+	.headline {
+		font-family: 'Open Sans', 'Arial';
+		font-size: 1.5em;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	.game {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.canvas {
+		position: relative;
+	}
+	canvas {
+		display: block;
+		margin: 0 auto;
+	}
+	#board {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.flex {
+		display: flex;
+		flex-flow: column wrap;
+		padding: 0.2em 0;
+	}
+	.button, .desc, .gen {
+		display: inline-block;
+		transition: 400ms;
+	}
+	.button {
+		padding: 0.3em
+	}
+	.active {
+		background: #FF8A65;
+	}
+	button {
+		background: #FF5722;
+		border: 0;
+		padding: 0.3em 0.5em;
+		border-radius: 5px;
+		color: white;
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+	button:active {
+		transform: translateY(1px);
+	}
+	.desc {
+		display: inline-block;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 0.5em;
+	}
+	#gen {
+		font-size: 0.9em;
+	}

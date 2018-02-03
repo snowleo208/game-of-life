@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game of Life</title>
+	 <link rel="stylesheet" type="text/css" href="./game-of-life.css">
+</head>
+<body>
+	<div class="game">
+		<h1 class="headline">Conway's Game of Life</h1>
+		<div class="canvas">
+			<canvas id="stroke"></canvas>
+			<canvas id="board"></canvas>
+		</div>
+		<div>
+			<p class="desc"><strong>Generations: </strong></p><span id="gen"></span>
+		</div>
+		<div class="flex">
+		<div class="button">
+			<button class="btn" id="start">Start</button>
+			<button class="btn" id="stop">Stop</button>
+			<button class="btn" id="reset">Reset</button>
+		</div>
+		<div class="button">
+			<span>Grid</span>
+			<button class="grid-btn btn" id="10">10</button>
+			<button class="grid-btn btn" id="50">50</button>
+			<button class="grid-btn btn" id="100">100</button>
+		</div>
+		<div class="button">
+			<span>Speed</span>
+			<button class="speed-btn btn" id="slow">Slow</button>
+			<button class="speed-btn btn" id="medium">Medium</button>
+			<button class="speed-btn btn" id="fast">Fast</button>
+		</div>
+		</div>
+	</div>
+	  <script src="./game-of-life.js"></script> 
+	  
+</body>
+</html>
