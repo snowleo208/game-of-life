@@ -15,3 +15,6 @@ Conway's Game of Life in JS
 - I can clear the board.
 - When I press start, the game will play out.
 - Each time the board changes, I can see how many generations have gone by.
+
+## Demo
+[View Demo Here](https://snowleo208.github.io/game-of-life/game-of-life.html)
