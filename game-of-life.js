@@ -63,6 +63,8 @@ const conwayGame = () => {
 		document.getElementById('start').addEventListener('click', (e) => { game.start(); })
 		document.getElementById('stop').addEventListener('click', (e) => { game.stop(); })
 		document.getElementById('reset').addEventListener('click', (e) => { game.reset(); })
+		document.getElementById('clear').addEventListener('click', (e) => { game.clear(); })
+		
 		document.getElementById('10').addEventListener('click', (e) => { grid = 10; game.reset(); checkBtn("grid", "10"); })
 		document.getElementById('50').addEventListener('click', (e) => { grid = 50; game.reset(); checkBtn("grid", "50"); })
 		document.getElementById('100').addEventListener('click', (e) => { grid = 100; game.reset(); checkBtn("grid", "100"); })
@@ -77,8 +79,6 @@ const conwayGame = () => {
 
 		//create random cells
 		game.reset();
-		
-		game.start();
 	}
 	const gridSize = (col) => {
 		row = [];
@@ -210,6 +210,10 @@ const conwayGame = () => {
 		}
 		game.draw(list);
 	}
+	const clear = () => {
+		list = [];
+		game.draw();
+	}
 	const game = {
 		init,
 		draw,
@@ -217,6 +221,7 @@ const conwayGame = () => {
 		update,
 		start,
 		stop,
+		clear,
 		reset
 	}
 	game.init();
